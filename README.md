@@ -62,22 +62,22 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname audit details
-- Total Prize Pool: XXX XXX USDC (Notion: Total award pool)
-  - HM awards: XXX XXX USDC (Notion: HM (main) pool)
-  - Analysis awards: XXX XXX USDC (Notion: Analysis pool)
-  - QA awards: XXX XXX USDC (Notion: QA pool)
-  - Bot Race awards: XXX XXX USDC (Notion: Bot Race pool)
-  - Gas awards: XXX XXX USDC (Notion: Gas pool)
-  - Judge awards: XXX XXX USDC (Notion: Judge Fee)
-  - Lookout awards: XXX XXX USDC (Notion: Sum of Pre-sort fee + Pre-sort early bonus)
-  - Scout awards: $500 USDC (Notion: Scout fee - but usually $500 USDC)
-  - (this line can be removed if there is no mitigation) Mitigation Review: XXX XXX USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
+# PoolTogether audit details
+- Total Prize Pool: $121,650 USDC
+  - HM awards: $61,875 USDC
+  - Analysis awards: $3,750 USDC
+  - QA awards: $1,875 USDC
+  - Bot Race awards: $5,625 USDC
+  - Gas awards: $1,875 USDC
+  - Judge awards: $13,000 USDC
+  - Lookout awards: $6,000 USDC
+  - Scout awards: $500 USDC
+  - Mitigation Review: $27,150 USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-AuditName/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-07-pooltogether/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 20:00 UTC (ex. `Starts March 22, 2023 20:00 UTC`)
-- Ends TBD XXX XXX XX 20:00 UTC (ex. `Ends March 30, 2023 20:00 UTC`)
+- Starts July 7, 2023 20:00 UTC
+- Ends July 14, 2023 20:00 UTC
 
 ## Automated Findings / Publicly Known Issues
 
@@ -113,26 +113,26 @@ Automated findings output for the audit can be found [here](add link to report) 
 
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here:  
-- How many contracts are in scope?:   
-- Total SLoC for these contracts?:  
-- How many external imports are there?:  
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  
-- Does most of your code generally use composition or inheritance?:   
-- How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:  
-- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
-- Please describe required context:   
-- Does it use an oracle?:  
-- Does the token conform to the ERC20 standard?:  
-- Are there any novel or unique curve logic or mathematical models?: 
+- If you have a public code repo, please share it here:  https://github.com/pooltogether/v5-prize-pool
+- How many contracts are in scope?:   12
+- Total SLoC for these contracts?:  3000
+- How many external imports are there?:  3
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  20
+- Does most of your code generally use composition or inheritance?:  Composition 
+- How many external calls?:   12
+- What is the overall line coverage percentage provided by your tests?:  100%
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   False
+- Please describe required context:   N/A
+- Does it use an oracle?:  No
+- Does the token conform to the ERC20 standard?:  Yes
+- Are there any novel or unique curve logic or mathematical models?: False
 - Does it use a timelock function?:  
 - Is it an NFT?: 
-- Does it have an AMM?:   
-- Is it a fork of a popular project?:   
+- Does it have an AMM?:  Yes 
+- Is it a fork of a popular project?:  No 
 - Does it use rollups?:   
 - Is it multi-chain?:  
-- Does it use a side-chain?: 
+- Does it use a side-chain?: No
 ```
 
 # Tests
