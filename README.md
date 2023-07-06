@@ -37,20 +37,20 @@ You can read more about the protocol design in our [official documentation](http
 
 | Contract | SLOC | Purpose | Libraries used |  
 | ----------- | ----------- | ----------- | ----------- |
-| [claimer/src/lib/LinearVRGDALib.sol](./claimer) | 51 | Variable-Rate Gradual Dutch Auction Math | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`solmate`](https://github.com/transmissions11/solmate) |
-| [claimer/src/Claimer.sol](./claimer) | 86 | Incentivizes prize claims for a Prize Pool | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
-| [prize-pool/src/abstract/TieredLiquidityDistributor.sol](./prize-pool) | 753 | Distributes liquidity as tiered prizes | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
-| [prize-pool/src/libraries/DrawAccumulatorLib.sol](./prize-pool) | 286 | Distributes liquidity over future draws using exponential smoothing | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
-| [prize-pool/src/libraries/TierCalculationLib.sol](./prize-pool) | 81 | Computes tier odds, prize counts, and winners | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
-| [prize-pool/src/libraries/UD34x4.sol](./prize-pool) | 35 | Provides an unsigned 34x4 precision fixed point decimal | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
-| [prize-pool/src/PrizePool.sol](./prize-pool) | 528 | Distributes liquidity as tiered prizes | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
-| [twab-controller/src/libraries/ObservationLib.sol](./twab-controller) | 45 | Tracks a ring buffer of balance observations and provides a fast binary search algorithm to access them | [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
-| [twab-controller/src/libraries/OverflowSafeComparatorLib.sol](./twab-controller) | 21 | Provides an overflow-safe means of comparing two 32-bit timestamps |  |
-| [twab-controller/src/libraries/TwabLib.sol](./twab-controller) | 442 | Provides an accounts struct and logic to mint, burn and transfer balance and measure twabs. | [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
-| [twab-controller/src/TwabController.sol](./twab-controller) | 393 | Allows contracts to track balances and look up the time-weighted average balance of an account | |
-| [vault/src/interfaces/IVaultHooks.sol](./vault) | 20 | Provides a standard interface with which to attach hooks to vaults | |
-| [vault/src/Vault.sol](./vault) | 540 | An ERC-4626 compatible vault that uses a Twab Controller to track balances. The contract is bound to an ERC-4626 yield source and exposes yield to a liquidator. | [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts), [`owner-manager-contracts`](https://github.com/pooltogether/owner-manager-contracts) |
-| [vault/src/VaultFactory.sol](./vault) | 43 | Provides a mean to easily create new Vaults and find them | [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
+| [claimer/src/lib/LinearVRGDALib.sol](https://github.com/GenerationSoftware/pt-v5-claimer/blob/a48b7b337841a5b2e650b282b66923bc246b3734/src/lib/LinearVRGDALib.sol) | 51 | Variable-Rate Gradual Dutch Auction Math | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`solmate`](https://github.com/transmissions11/solmate) |
+| [claimer/src/Claimer.sol](https://github.com/GenerationSoftware/pt-v5-claimer/blob/a48b7b337841a5b2e650b282b66923bc246b3734/src/Claimer.sol) | 86 | Incentivizes prize claims for a Prize Pool | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
+| [prize-pool/src/abstract/TieredLiquidityDistributor.sol](https://github.com/GenerationSoftware/pt-v5-prize-pool/blob/4cbd0dbb40704c21cc07b42b2e3057a7e90b1057/src/abstract/TieredLiquidityDistributor.sol) | 753 | Distributes liquidity as tiered prizes | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
+| [prize-pool/src/libraries/DrawAccumulatorLib.sol](https://github.com/GenerationSoftware/pt-v5-prize-pool/blob/4cbd0dbb40704c21cc07b42b2e3057a7e90b1057/src/libraries/DrawAccumulatorLib.sol) | 286 | Distributes liquidity over future draws using exponential smoothing | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
+| [prize-pool/src/libraries/TierCalculationLib.sol](https://github.com/GenerationSoftware/pt-v5-prize-pool/blob/4cbd0dbb40704c21cc07b42b2e3057a7e90b1057/libraries/TierCalculationLib.sol) | 81 | Computes tier odds, prize counts, and winners | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
+| [prize-pool/src/libraries/UD34x4.sol](https://github.com/GenerationSoftware/pt-v5-prize-pool/blob/4cbd0dbb40704c21cc07b42b2e3057a7e90b1057/src/libraries/UD34x4.sol) | 35 | Provides an unsigned 34x4 precision fixed point decimal | [`prb-math`](https://github.com/PaulRBerg/prb-math) |
+| [prize-pool/src/PrizePool.sol](https://github.com/GenerationSoftware/pt-v5-prize-pool/blob/4cbd0dbb40704c21cc07b42b2e3057a7e90b1057/src/PrizePool.sol) | 528 | Distributes liquidity as tiered prizes | [`prb-math`](https://github.com/PaulRBerg/prb-math), [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
+| [twab-controller/src/libraries/ObservationLib.sol](https://github.com/GenerationSoftware/pt-v5-twab-controller/blob/1cdf78e87a3d9127f85a3755024f143664643c5e/src/libraries/ObservationLib.sol) | 45 | Tracks a ring buffer of balance observations and provides a fast binary search algorithm to access them | [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
+| [twab-controller/src/libraries/OverflowSafeComparatorLib.sol](https://github.com/GenerationSoftware/pt-v5-twab-controller/blob/1cdf78e87a3d9127f85a3755024f143664643c5e/src/libraries/OverflowSafeComparatorLib.sol) | 21 | Provides an overflow-safe means of comparing two 32-bit timestamps |  |
+| [twab-controller/src/libraries/TwabLib.sol](https://github.com/GenerationSoftware/pt-v5-twab-controller/blob/1cdf78e87a3d9127f85a3755024f143664643c5e/src/libraries/TwabLib.sol) | 442 | Provides an accounts struct and logic to mint, burn and transfer balance and measure twabs. | [`ring-buffer-lib`](https://github.com/generationsoftware/ring-buffer-lib) |
+| [twab-controller/src/TwabController.sol](https://github.com/GenerationSoftware/pt-v5-twab-controller/blob/1cdf78e87a3d9127f85a3755024f143664643c5e/src/TwabController.sol) | 393 | Allows contracts to track balances and look up the time-weighted average balance of an account | |
+| [vault/src/interfaces/IVaultHooks.sol](https://github.com/GenerationSoftware/pt-v5-vault/blob/2f81646af3aca24866415c1cfeb1cf58336d6ba6/src/interfaces/IVaultHooks.sol) | 20 | Provides a standard interface with which to attach hooks to vaults | |
+| [vault/src/Vault.sol](https://github.com/GenerationSoftware/pt-v5-vault/blob/2f81646af3aca24866415c1cfeb1cf58336d6ba6/src/Vault.sol) | 540 | An ERC-4626 compatible vault that uses a Twab Controller to track balances. The contract is bound to an ERC-4626 yield source and exposes yield to a liquidator. | [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts), [`owner-manager-contracts`](https://github.com/pooltogether/owner-manager-contracts) |
+| [vault/src/VaultFactory.sol](https://github.com/GenerationSoftware/pt-v5-vault/blob/2f81646af3aca24866415c1cfeb1cf58336d6ba6/src/VaultFactory.sol) | 43 | Provides a mean to easily create new Vaults and find them | [`openzeppelin`](https://github.com/OpenZeppelin/openzeppelin-contracts) |
 
 ## Out of Scope
 
@@ -119,8 +119,14 @@ The Vaults hold user funds, so it's critical that there can be no loss of funds.
 - Does it use a side-chain?: No
 ```
 
+# Setup
+
+Clone using the `--recurse` option or update the repository with `git submodule update --init --recursive`
+
 # Tests
 
 Within each git submodule, you can run `forge test` to run all tests. You can run `forge coverage` to see the coverage report.
+
+One-Liner for tests: `cd claimer && forge test && cd .. && cd prize-pool && forge test && cd .. && cd twab-controller && forge test && cd .. && cd vault && forge test && cd ..`
 
 Note: the Prize Pool must be compiled with `--optimize --via-ir` in order to fit within contract size limits.
