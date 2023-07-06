@@ -7,9 +7,6 @@
 [submodule "claimer"]
 	path = claimer
 	url = https://github.com/GenerationSoftware/pt-v5-claimer
-[submodule "draw-auction"]
-	path = draw-auction
-	url = git@github.com:GenerationSoftware/pt-v5-draw-auction.git
 [submodule "vault"]
 	path = vault
 	url = https://github.com/GenerationSoftware/pt-v5-vault

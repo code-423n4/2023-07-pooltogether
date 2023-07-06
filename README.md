@@ -118,7 +118,8 @@ You can read more about the protocol design in our [official documentation](http
 
 ## Out of Scope
 
-The yield from Vault's is converted to POOL by the Liquidator. The Liquidator has not been fully finalized, so that contract is out of scope. You can assume that the Liquidator will also be a singleton contract per-chain.
+1. The yield from each Vault is converted to POOL by the Liquidator. The Liquidator has not been fully finalized, so that contract is out of scope. You can assume that the Liquidator will also be a singleton contract per-chain.
+2. The Draw Auction is the mechanism that pushes new draws to the Prize Pool. It leverages the same RNG source as previous versions of PoolTogether, and incentivizes anyone to trigger the transactions using a reverse dutch auction. The contracts are not complete, but you can assume the auction will be a singleton contract on each chain, as with the Liquidator.  The Draw Auction will have the privileged ability to withdraw reserve from the Prize Pool.
 
 # Additional Context
 
@@ -161,8 +162,8 @@ The Vaults hold user funds, so it's critical that there can be no loss of funds.
 - [vault](https://github.com/GenerationSoftware/pt-v5-vault)
 
 ```
-- How many contracts are in scope?:   16
-- Total SLoC for these contracts?:  3500
+- How many contracts are in scope?:   14
+- Total SLoC for these contracts?:  3335
 - How many external imports are there?:  4
 - How many separate interfaces and struct definitions are there for the contracts within scope?:  ~20
 - Does most of your code generally use composition or inheritance?:  Composition 
