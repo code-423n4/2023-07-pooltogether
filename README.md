@@ -33,6 +33,8 @@ PoolTogether V5 is a major leap forward for the protocol. The system is:
 
 You can read more about the protocol design in our [official documentation](https://dev.pooltogether.com/protocol/next/design/)
 
+Here is a [Loom video](https://www.loom.com/share/a884d5c3ac4e408f8541af151989c5c9?sid=6c36560f-5323-46c7-9af0-83b3057951a6) highlighting the major concepts in the code:
+
 # Scope
 
 | Contract | SLOC | Purpose | Libraries used |  
