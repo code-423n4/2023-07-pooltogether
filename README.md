@@ -63,7 +63,7 @@ You can read more about the protocol design in our [official documentation](http
 
 There are a few important mathematical models used in the codebase that are important to understand:
 
-- The Claimer uses a Variable-Rate Gradual Dutch Auction to price the claiming fees. We have tuned the algorithm to be a reverse dutch auction. You can read more about the variable rate dutch auction in the original [Paradigm article](https://www.paradigm.xyz/2022/08/vrgda). We've made the price decay greater than one to have the price increase.
+- The Claimer uses a Variable-Rate Gradual Dutch Auction to price the claiming fees. We have tuned the algorithm to be a reverse dutch auction, in that the price decay is greater than one. You can read more about the variable rate dutch auction in the original [Paradigm article](https://www.paradigm.xyz/2022/08/vrgda).
 - The Prize Pool receives liquidity from Vaults and distributes the liquidity across future draws with what is essentially a low-pass filter. You can read more about it in [our docs](https://dev.pooltogether.com/protocol/next/design/prize-pool#exponential-weighted-average)
 - The Prize Pool is distributing prizes by generating pseudo-random numbers for each vault / account / prize combination. The user 'wins' if the PRN fits within a numeric range whose bounds are commensurate with the vault's portion of the total prize liquidity for the draw, and the given tier's odds.
 
@@ -92,7 +92,6 @@ The Vaults hold user funds, so it's critical that there can be no loss of funds.
 **Repositories**
 
 - [claimer](https://github.com/GenerationSoftware/pt-v5-claimer)
-- [draw-auction](https://github.com/GenerationSoftware/pt-v5-draw-auction)
 - [prize-pool](https://github.com/GenerationSoftware/pt-v5-prize-pool)
 - [twab-controller](https://github.com/GenerationSoftware/pt-v5-twab-controller)
 - [vault](https://github.com/GenerationSoftware/pt-v5-vault)
