@@ -17,7 +17,7 @@
 
 ## Automated Findings / Publicly Known Issues
 
-Automated findings output for the audit can be found [here](add link to report) within 24 hours of audit opening.
+Automated findings output for the audit can be found [here](https://gist.github.com/itsmetechjay/e7fd03943bbacff1984a33b9f89c4149).
 
 *Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
 
