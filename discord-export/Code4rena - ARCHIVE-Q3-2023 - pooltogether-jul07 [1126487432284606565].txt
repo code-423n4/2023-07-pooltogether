@@ -1,0 +1,1307 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q3-2023 / pooltogether-jul07
+==============================================================
+
+[07/07/2023 11:32] kartoonjoy (pinned)
+👋 Hello and welcome to the audit channel for the $121,650 USDC**PoolTogether** audit!
+
+📆 Audit opens 07/07/2023 20:00 (20:00 UTC) and runs through 07/14/2023 20:00 (20:00 UTC) (7 days).
+
+Please give a warm welcome to the PoolTogether team, particularly @Brendan 🌊🏆, @trmid, and @Dylan, who will be available for questions either here in the channel or via DM in the GMT+1 timezone(s).
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/contests/2023-07-pooltogether
+
+{Embed}
+https://code4rena.com/contests/2023-07-pooltogether
+Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/c4-og-banner-DCA83.png
+
+{Reactions}
+praisethesun (9) 👋 (3) 
+
+[07/07/2023 11:32] kartoonjoy
+Pinned a message.
+
+
+[07/07/2023 20:03] asselstine
+Hello everyone! We're very excited to be back with the wolfpack for an audit of the latest version of PoolTogether
+
+{Reactions}
+👋 (7) 
+
+[07/07/2023 20:04] asselstine
+Feel free to dm myself or the people tagged above if you have any questions
+
+
+[07/07/2023 20:04] asselstine
+I'm going to have a video walkthrough for you all shortly; we've been busy so I've been a little delayed getting it out.  Will have it by EOD today!
+
+{Reactions}
+👍 (6) 
+
+[07/07/2023 20:40] trmid
+Good luck to everyone! I'm happy to receive any DMs with questions as well. Happy hunting 🌊 🏆
+
+{Reactions}
+👍 (5) 
+
+[07/07/2023 21:32] securitydev23
+Hi- I just cloned the repo and for some reason, it is not allowing me access to any of the files. Can someone help me with this @everyone
+
+
+[07/07/2023 21:39] ni8mare#5096
+tried this? 
+`git clone --recurse https://github.com/code-423n4/2023-07-pooltogether.git`
+
+
+[07/07/2023 21:49] asselstine
+Here is a Loom video describing the high-level concepts:
+
+
+[07/07/2023 21:49] asselstine (pinned)
+https://www.loom.com/share/a884d5c3ac4e408f8541af151989c5c9?sid=4aa93487-2f76-4c2a-8655-3cf0db32ec1c
+
+{Embed}
+https://www.loom.com/share/a884d5c3ac4e408f8541af151989c5c9?sid=4aa93487-2f76-4c2a-8655-3cf0db32ec1c
+C4 Audit for PoolTogether V5: High-level Overview
+Hi everyone, it's Brendan! In this video, I'll be walking you through the Pool Together V5 smart contracts that are currently under audit for the C4 audit from July 7th to July 14th. We'll dive into the prize pool, the volt factory, the flow of funds, and more. I'll explain how the contracts work, their functionalities, and how they interact wit...
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/a884d5c3ac4e408f8541af151989c5c9-00001-B48B4.gif
+
+
+[07/07/2023 21:50] asselstine (pinned)
+Associated Figjam file: https://www.figma.com/file/26uWqLTx3t5SUi95a232cI/PoolTogether-V5-Walkthrough?type=whiteboard&node-id=0%3A1&t=kuuq3uTCZ32tz2LE-1
+
+{Embed}
+https://www.figma.com/file/26uWqLTx3t5SUi95a232cI/PoolTogether-V5-Walkthrough?type=whiteboard&node-id=0%3A1&t=kuuq3uTCZ32tz2LE-1
+PoolTogether V5 Walkthrough
+Created with FigJam
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/thumbnail-3BA15
+
+
+[07/07/2023 21:52] securitydev23
+Thank you that worked. It kept running over and over. I had to terminate  it in the command line.
+
+
+[07/07/2023 21:59] kartoonjoy
+Pinned a message.
+
+
+[07/07/2023 21:59] kartoonjoy
+Pinned a message.
+
+
+[07/07/2023 22:22] 0xray44
+has the code been audited before? if so where can i find previous audits
+
+
+[07/07/2023 22:39] mrpotatomagic
+I think there have been previous audits on C4 itself, you can check Reports on the C4 website
+
+
+[07/07/2023 22:42] 0xray44
+cool, thanks
+
+
+[07/07/2023 23:12] asselstine
+https://docs.pooltogether.com/security/audits
+
+{Embed}
+https://docs.pooltogether.com/security/audits
+Audits
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/https%253A%252F%252F32394911-files.gitbook-05B40
+
+
+[07/07/2023 23:12] asselstine (pinned)
+Mostly new, but elements of the twab controller have been audited
+
+
+[07/07/2023 23:20] 0xarshia
+Hello @Brendan 🌊🏆  just Dm'ed you
+
+{Reactions}
+👍 
+
+[07/07/2023 23:21] kartoonjoy
+Pinned a message.
+
+
+[07/07/2023 23:36] 0xray44
+thanks !
+
+{Reactions}
+👍 
+
+[07/08/2023 00:31] road220
+Thank you for such opportunity, let's go!!!
+
+{Reactions}
+🤘 (2) 
+
+[07/08/2023 01:14] road220
+this path has to be slightly changed. Thanks!
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/Screenshot_2023-07-08_at_04.13.29-1FE5E.png
+
+
+[07/08/2023 01:51] itsmetechjay
+Updated!
+
+{Reactions}
+❤️ 
+
+[07/08/2023 02:59] bytes032
+@Brendan 🌊🏆 @trmid @Dylan sent you all a friend request
+
+{Reactions}
+👍 
+
+[07/08/2023 04:30] 0xvolodya
+does anybody else have a problem with prize pool test? I am running with --optimize --via-ir
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/Screenshot_from_2023-07-08_12-29-18-7DDCD.png
+
+
+[07/08/2023 07:25] bean.eth2
+liquidate is called by liquidator /LiquidationPair, however this is out of scope am i correct? @Brendan 🌊🏆
+
+
+[07/08/2023 07:27] road220
+I think, in the video mentioned above @Brendan 🌊🏆 said that it's expected to be a singleton contract which is not fully developed rn, thus out of scope
+
+{Reactions}
+🙏🏻 
+
+[07/08/2023 09:28] infectedfuture
+Hi, any idea why vscode is not able to find the files ?
+The remapping is here, I've installed libs using `forge install` (also tried `yarn install`) at the root of each repo (claimer/prize-pool/...) and libs are present where they are expected as per the remappings.txt
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-E3427.png
+
+
+[07/08/2023 09:29] infectedfuture
+When I ctrl+click on an import here's where vscode goes :
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-6D4CF.png
+
+
+[07/08/2023 09:29] infectedfuture
+seems like remappings isn't taken into account
+
+
+[07/08/2023 11:18] co0nan
+Vault._deposit calls `_yieldVault.deposit(_assets, address(this));` internally, where is the contract for _yieldVault?
+
+
+[07/08/2023 11:19] alymurtazamemon
+ERC4626
+
+{Reactions}
+👍🏼 
+
+[07/08/2023 13:26] itsmetechjay (pinned)
+**Wardens** - please note that the automated findings output (AKA the winning bot race report 🏆), submitted by @ChaseTheLight is posted below.
+
+These are considered publicly known issues and are not eligible for awards.
+
+🤖 **Automated findings:** 
+https://gist.github.com/itsmetechjay/e7fd03943bbacff1984a33b9f89c4149
+
+📄 **Code4rena submission guidelines and automated findings policy:** 
+https://docs.code4rena.com/roles/wardens/submission-policy#automated-findings-ineligible
+
+The above link will also be added to the contest README shortly.
+
+
+[07/08/2023 13:26] itsmetechjay
+Pinned a message.
+
+
+[07/08/2023 20:04] aslanbekaibimov
+Why the charts for Tiers >= 1 never go to zero, but the Tier0 chart always does? 
+
+https://www.figma.com/file/26uWqLTx3t5SUi95a232cI/PoolTogether-V5-Walkthrough?type=whiteboard&node-id=0-1
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-42487.png
+
+{Embed}
+https://www.figma.com/file/26uWqLTx3t5SUi95a232cI/PoolTogether-V5-Walkthrough?type=whiteboard&node-id=0-1
+PoolTogether V5 Walkthrough
+Created with FigJam
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/thumbnail-3BA15
+
+
+[07/08/2023 20:16] asselstine
+The Grand prizes are for the whole tier 0 pot of liquidity, so when is awarded it’s cleared out
+
+That being said- you have keen eyes.  This is an older chart from an earlier version of the algorithm that only allowed one prize per user per tier per vault.  That’s been changed (with the prize index), so we should see more variance in the prize sizes for mid tiers.
+
+I was pressed for time so I don’t have an updated chart, but I believe it still illustrates the relative variance nicely
+
+
+[07/08/2023 20:22] fabienmorrow
+sry it's still unclear for me. How a Ti can decrease without reaching zero ? How a bucket can be partially emptied ? If someone won and the prize is claimed, the Ti is emptied no ?
+
+
+[07/08/2023 20:24] asselstine
+For the grand prize yes because the prize size is the whole bucket of liquidity
+
+
+[07/08/2023 20:24] asselstine
+For other tiers the liquidity is split across 4^t prizes, which will have statistical variance
+
+
+[07/08/2023 20:25] asselstine
+For the daily prizes, this may be higher.  This is why we have the reserve to act as a second reservoir of liquidity
+
+{Reactions}
+👍 (2) 
+
+[07/08/2023 20:26] fabienmorrow
+ok that's my missing piece of puzzle, I will dig this a while, thx 🙂
+
+{Reactions}
+👍 (2) 
+
+[07/08/2023 22:06] fabienmorrow
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-F2032.png
+
+
+[07/08/2023 22:06] fabienmorrow
+how can I find the 51.07 ? what calcul should I do ?
+
+
+[07/08/2023 22:07] fabienmorrow
+@Brendan 🌊🏆
+
+
+[07/08/2023 22:13] asselstine
+The equations are available here
+
+
+[07/08/2023 22:13] asselstine
+https://docs.google.com/spreadsheets/d/17SxiUdQag8GJVKphE4XGh9Wc9Z7rxAxQGgyt81OkVaQ/edit
+
+{Embed}
+https://docs.google.com/spreadsheets/d/17SxiUdQag8GJVKphE4XGh9Wc9Z7rxAxQGgyt81OkVaQ/edit
+PoolTogether V5 Prize Distribution v2 (copy)
+V5
+
+4,Canary Shares,10,$2,403.85,Reserve Shares,10,52
+Tier,Prize Count,Prize Shares,Draw Prize Liquidity Share,Tier Odds,Prize Period,Tier Accrued Liquidity,Est. Prize Size,Draws Between Prizes,Canary Partial Liquidity,Canary Actual Liquidity,Canary Future Portion,Canary Actual Portion,Counts
+0,1...
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/AOD9vFptL10P5HKILg2EBj7WGVT4BY6RuRUnSYfspG-173C3
+
+{Reactions}
+👍 
+
+[07/08/2023 22:14] asselstine
+You’ll also find the official for@Uma here
+
+
+[07/08/2023 22:14] asselstine
+https://dev.pooltogether.com/protocol/next/design/prize-pool#prize-tiers
+
+{Embed}
+https://dev.pooltogether.com/protocol/next/design/prize-pool
+Prize Pool | PoolTogether
+In PoolTogether V5 prizes are distributed through the Prize Pool contract. There is one Prize Pool deployed on each chain on which PT is deployed. The Prize Pool receives POOL tokens from Vaults, and releases the tokens as prizes in daily Draws. In this way, prize liquidity is isolated to a chain.
+
+
+[07/08/2023 22:19] fabienmorrow
+the columns from C to G aren't available, is this normal ? sry being boring...
+
+
+[07/09/2023 04:32] 0xstalin
+Hey @Brendan 🌊🏆 @trmid @Dylan 
+I have a question about the Vault's owners... As for the scope of this audit, how should we treat those owners?
+- Trusted entities, restricted entities?
+
+From the video, I understood that each vault will have its own owner.., and vaults can be created permissionless....
+
+If we identify ways that vault owners can abuse their privilege and cause harm to the users, is this something you are interested in?
+
+
+[07/09/2023 05:00] asselstine
+Would love to hear about that.
+
+This is new territory for us.  Our goal is that some degree of behavior is guaranteed by using the standard PoolTogether vault, but at the end of the day if someone makes a token that rugs there is nothing the protocol can do.
+
+That being said, identifying the possible ingress points means that we’ll know what to look for.  We won’t be going in blind.
+
+So I encourage you to think outside the box; put that adversarial hat on and see how you can find a way in.
+
+{Reactions}
+🫡 
+
+[07/09/2023 05:01] asselstine
+They may just be hidden in the Google sheet
+
+
+[07/09/2023 06:22] 0xarmedgoose
+hey team! got a question, what is the yieldVault? I see the "regular" vaults are depositing there, is it kind of intermediate vault where the vault yield is stored before being sent to prize pool, or how does it work?
+
+
+[07/09/2023 06:35] 0xstalin
+@Brendan 🌊🏆 Just wondering what would happen if the repos that are being referenced on the code4rena repo are updated during the contest & judging phases?
+
+For example, If I report an issue on line 50 on the Vault contract (https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L50), and then the repo is updated and some lines are added/removed, when the judges look at the links I used as a reference, would the updates affect the links, or updates are pushed and new links are created...? How does that work? Or the repos won't be updated at all?
+
+{Embed}
+https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol
+pt-v5-vault/src/Vault.sol at b1deb5d494c25f885c34c83f014c8a855c5e27...
+Contribute to GenerationSoftware/pt-v5-vault development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/pt-v5-vault-D1205
+
+
+[07/09/2023 07:24] hasanza
+Same question here. How is a `yieldVault` different from a `Vault`. As I understand, users supply the `yieldVault` address when creating a `Vault`, but what exactly is it?
+
+{Reactions}
+👍 
+
+[07/09/2023 07:31] zhaojie
+I think it's just an erc20 token and it's not in scope.
+
+
+[07/09/2023 07:53] 0xarmedgoose
+its pointed in the comments that it is an another vault, that's why I understood that there are in fact two vaults, the entry one and the "yield earning" one where the funds are deposited at the end
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-CAC5D.png
+
+
+[07/09/2023 07:53] asselstine
+Vaults are 4626 compatible, and they use an underlying 4626 compatible yield source
+
+
+[07/09/2023 07:54] asselstine
+Our vaults are a gamification layer on top of regular 4626 yield
+
+
+[07/09/2023 07:58] 0xarmedgoose
+thanks! just if I understood properly, so the users are supposed to already be using some vaults,  and they/their procotol can add PoolTogether layer on it, which in this case means setting the yieldVault to the vault the user was previously using and thats how you integrate PT with the "old vault" right?
+
+
+[07/09/2023 10:25] mrpotatomagic
+Can someone please send the RingBufferLib.sol contract here, I am not able to find it
+
+
+[07/09/2023 11:43] hasanza
+For some reason, I also couldn't find it in the vault repo.
+
+Here it is: https://github.com/pooltogether/ring-buffer-lib/blob/86a7ffd10c8e4d1a4aab68ada66f06501c25fce9/src/RingBufferLib.sol#L4
+
+{Reactions}
+👍 (2) 
+
+[07/09/2023 11:51] mrpotatomagic
+Thank you!
+
+{Reactions}
+💯 
+
+[07/09/2023 13:26] hasanza
+@Brendan 🌊🏆 Can you please elaborate the rationale behind having `maxDeposit` limits in `Vault.deposit`?
+
+
+[07/09/2023 14:28] kawaicho
+Is the Vault gonna be pausable?
+
+
+[07/09/2023 16:07] 0xstalin
+Hey @Brendan 🌊🏆 Send you DM sir 🫡
+
+{Reactions}
+👍 
+
+[07/09/2023 16:27] 0x_serial_coder
+@Brendan 🌊🏆 DMed you sir
+
+{Reactions}
+👍 
+
+[07/09/2023 16:44] asselstine
+No
+
+
+[07/09/2023 16:45] asselstine
+That’s part of the 4626 spec
+
+
+[07/09/2023 18:01] proxy1967
+@Brendan 🌊🏆 could you explain more what is and how is `delegateBalance` used from `TWABController`?
+
+
+[07/09/2023 18:11] asselstine
+The twab controller tracks two balances: the balance that an account “owns” and the balance that has been delegated to it
+
+
+[07/09/2023 18:12] asselstine
+The delegated balance is what is used for chance
+
+
+[07/09/2023 18:13] asselstine
+The “owned” balance is the users ERC20 balance, essentially
+
+
+[07/09/2023 18:13] asselstine
+Hope that helps
+
+
+[07/09/2023 18:13] proxy1967
+so delegated is the one used you could say
+
+
+[07/09/2023 18:13] proxy1967
+and balance is just overall
+
+
+[07/09/2023 18:14] asselstine
+Yeah
+
+
+[07/09/2023 18:14] proxy1967
+Ok
+
+
+[07/10/2023 03:18] zhaojie
+When was the value added to map userObservations in TwabController ? @Brendan 🌊🏆
+
+
+[07/10/2023 03:21] asselstine
+Not quite following the question
+
+
+[07/10/2023 03:24] zhaojie
+TwabController.userObservations , looks like there's no initialization.
+
+
+[07/10/2023 04:27] alymurtazamemon
+@Brendan 🌊🏆 Sir please add me to your friend list, I am not able to send friend request.
+
+
+[07/10/2023 05:54] alymurtazamemon
+@Brendan 🌊🏆 please check DM
+
+
+[07/10/2023 07:49] teawaterwire
+is it just me or the `git submodule update --init --recursive` setup takes forever?
+
+
+[07/10/2023 08:44] aslanbekaibimov
+its almost 1GB in size
+
+
+[07/10/2023 10:23] hasanza
+Pardon me, I meant why use uint96.max as the deposit limit? I can see from a comment that its because balances are tracked in uint96 in TwabController, but why not use uint256 there?
+
+
+[07/10/2023 11:54] crc32#4377
+What will happen for POOL token price after pooltogether v5 launch ? Any price pump in near future ? 😅
+
+
+[07/10/2023 11:55] jovi6132
+It seems for gas gavings, according to their documentation at v4
+https://v4.docs.pooltogether.com/protocol/next/design/twab-controller/#data-limits
+
+{Embed}
+https://v4.docs.pooltogether.com/protocol/next/design/twab-controller/
+Twab Controller | PoolTogether
+What is it?
+
+{Reactions}
+👍 
+
+[07/10/2023 11:58] crc32#4377
+@Brendan 🌊🏆
+
+
+[07/10/2023 12:01] hasanza
+I see, thanks for the info, ser!
+
+{Reactions}
+💯 
+
+[07/10/2023 13:25] auditsea
+@Brendan 🌊🏆  - Any docs about YieldVault and LiquidationPair?
+
+
+[07/10/2023 13:47] asselstine
+The yield vault can be any 4626 compatible vault.  I thought it was intuitive but it seems we do need more docs!
+
+There aren’t docs for the liquidator just yet; working on those this week
+
+
+[07/10/2023 13:51] auditsea
+Thanks for the info.
+Also, don't you guys have a chart/diagram of the whole architecture in detail? Like how tokens are deposited, how they generate yield through Aave, Compound, etc, how tokens can be withdrawn while they are lended to Aave.
+
+{Reactions}
+👍 
+
+[07/10/2023 14:05] __melonwater
+@Brendan 🌊🏆 hi could you check my dm thanks
+
+
+[07/10/2023 16:06] hasanza
+Mine as well 🙂
+
+
+[07/10/2023 16:08] hasanza
+As I understand it, this is the process:
+
+User deposits Asset Token into `Vault`, `Vault` deposits this amount into `yieldVault`, `Vault` is minted yieldVaultShares by the yieldVault, while Vault mints VaultShares to the User .
+yieldVault can be any ERC4626 compatible vault capable of generating yield.
+
+
+[07/10/2023 16:43] alymurtazamemon
+@Brendan 🌊🏆 Please check your DM
+
+
+[07/10/2023 16:49] asselstine
+I'm seeing some confusion around how deposits are made into the Vault
+
+
+[07/10/2023 16:49] asselstine
+There are two ways of depositing into the Vault:
+
+1. A contract can transfer USDC to the Vault then call the deposit() function to deposit the additional balance
+2. A contract can approve a Vault allowance and call the deposit() function. The Vault will use safeTransferFrom to transfer-in the required tokens.
+
+
+[07/10/2023 16:50] asselstine
+This is our intention, at least. Let's see if you all can find issues.
+
+
+[07/10/2023 21:05] hasanza
+When a user deposits, do assets always leave the user's wallet and get transferred to the Vault (and then to the yieldVault from there)? If not, then why not?
+
+
+[07/10/2023 21:11] asselstine
+The assets are always deposited into the Vault, yes <https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L959C49-L959C49>
+
+
+[07/10/2023 23:26] __melonwater
+@trmid hi can you check my dm pls🙂
+
+
+[07/11/2023 05:39] proxy1967
+@Brendan 🌊🏆 in `TwabLib` `increaseBalance` and `decreaseBalance` why is the criteria for `isObservationRecorded = _delegateAmount != uint96(0);`, and is there any other ?
+
+
+[07/11/2023 05:42] asselstine
+Good question for @Dylan
+
+
+[07/11/2023 06:47] hasanza
+Hmm, but then what about the comments at line at line 923 and 941, which say assets are only transferred from the user if there are not enough assets in the Vault. Shouldn't assets always be transferred from users to Vault, no matter the amount of assets in the Vault?
+
+
+[07/11/2023 09:55] plamkata
+This project can run on any chain right
+
+
+[07/11/2023 09:55] plamkata
+I am a bit late to the party
+
+
+[07/11/2023 09:56] infectedfuture
+Hi, seems like yieldFeeRecipient is never used anywhere right ?
+
+
+[07/11/2023 10:50] wangxx2026
+@Brendan 🌊🏆 @trmid @Dylan do you have an answer to this question？
+
+
+[07/11/2023 13:39] dylandesrosier
+<https://github.com/GenerationSoftware/pt-v5-twab-controller/blob/0145eeac23301ee5338c659422dd6d69234f5d50/src/libraries/TwabLib.sol#L178>
+We only record a new Observation if the `delegateBalance` changes. No sense wasting gas when there's no change to the historic value. `_delegateAmount` is the amount to update the `delegateBalance` by.
+
+
+[07/11/2023 13:40] dylandesrosier
+Yes, everything within scope is chain agnostic
+
+
+[07/11/2023 13:43] dylandesrosier
+The code in scope will be frozen for the duration of the audit
+
+
+[07/11/2023 13:59] __melonwater
+@Dylan hi, can you check dm, thanks🙂
+
+
+[07/11/2023 14:14] 0xnirlin
+Which aave version being used?
+
+
+[07/11/2023 14:16] asselstine
+Welcome to the party!
+
+
+[07/11/2023 14:16] asselstine
+Yes it can
+
+
+[07/11/2023 14:16] asselstine
+We plan to launch in the near-term on Op, Arb, Base, zkSync and of course Ethereum
+
+
+[07/11/2023 14:16] plamkata
+Can I dm real quick?
+
+
+[07/11/2023 14:16] asselstine
+sure
+
+
+[07/11/2023 14:19] asselstine
+We don't currently have an Aave integration, but we're working with the 4626 Alliance to encourage Aave to audit an already-built wrapper
+
+
+[07/11/2023 14:20] __melonwater
+can you take a look at my dm when you are free, thanks
+
+
+[07/11/2023 14:32] hasanza
+I've also sent a DM
+
+
+[07/11/2023 14:49] plamkata
+Maybe I am missing something but whats the point of a user calling ``mintYieldFee()`` in the Vault?
+
+
+[07/11/2023 15:36] asselstine (pinned)
+Hey folks, I know many are having an issue with this curious line: <https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L580>
+
+The original developer is on vacation, but I reached out for an explanation.  **tldr; it's to prevent exchange rate manipulation. Here's what he said:**
+
+
+
+
+It's explained in this comment: <https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L548>
+
+Basically, we deposit into the YieldVault any amount of underlying assets that may be currently held by the Vault. This way when we _mint(), we ensure that the exchange rate is accurate.
+
+Since the Liquidator is only aware of the _amountIn of Prize Tokens contributed: <https://github.com/GenerationSoftware/pt-v5-liquidator/blob/94230890139bc12d3f5c8a9cc0838a5c71a221d2/src/LiquidationRouter.sol#L70>
+
+An attacker may try to manipulate the exchange rate by sending underlying assets directly to the Vault to inflate the amount of Vault shares received, that's why we have the following condition: _amountOut >= _vaultAssets
+
+We should not mint more Vault shares than Prize Tokens contributed. 
+
+The totalSupply and exchange rate will be updated once we _mint():
+<https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L1123>
+
+So we don't want to deposit into the Yield Vault more underlying assets than the _amountOut of Vault shares minted since the exchange rate is the total amount of underlying assets withdrawable from the Yield Vault over the total supply of Vault shares:
+<https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L1183>
+
+If we deposit more underlying assets than Vault shares minted, we would inflate the exchange rate.
+
+
+[07/11/2023 16:36] plamkata
+The prize pool will get deployed only once, or there would be multiple prize pools?
+
+
+[07/11/2023 16:41] 0xbtk
+The Prize Pool is fully autonomous and immutable; there are no governance or admin controls. The contract adjusts the number of prizes automatically. https://dev.pooltogether.com/protocol/next/design/prize-pool
+
+{Embed}
+https://dev.pooltogether.com/protocol/next/design/prize-pool
+Prize Pool | PoolTogether
+In PoolTogether V5 prizes are distributed through the Prize Pool contract. There is one Prize Pool deployed on each chain on which PT is deployed. The Prize Pool receives POOL tokens from Vaults, and releases the tokens as prizes in daily Draws. In this way, prize liquidity is isolated to a chain.
+
+
+[07/11/2023 16:59] dylandesrosier
+1 Prize Pool : N Prize Vaults. The plan is to have 1 Prize Pool per chain.
+
+
+[07/11/2023 17:18] plamkata
+I supposed there would be no ETH vaults, wETH would be used
+
+
+[07/11/2023 17:56] plamkata
+@Dylan @trmid
+
+
+[07/11/2023 18:32] dylandesrosier
+Correct
+
+
+[07/11/2023 19:50] Lanrebayode77#6788
+@Dylanhttps://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol#L941  Pls , could you tell me the reason for this
+
+{Embed}
+https://github.com/GenerationSoftware/pt-v5-vault/blob/b1deb5d494c25f885c34c83f014c8a855c5e2749/src/Vault.sol
+pt-v5-vault/src/Vault.sol at b1deb5d494c25f885c34c83f014c8a855c5e27...
+Contribute to GenerationSoftware/pt-v5-vault development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/pt-v5-vault-D1205
+
+
+[07/11/2023 20:00] trmid
+afaik, this allows a contract to deposit funds with cheaper gas costs since it doesn't need an approval. A contract can send tokens to the vault and call `_deposit` all in the same tx.
+
+
+[07/11/2023 20:00] Lanrebayode77#6788
+oh...thaks
+
+
+[07/11/2023 20:01] trmid
+np, see this comment as well for extra info: https://discord.com/channels/810916927919620096/1126487432284606565/1128005158148784198
+
+
+[07/12/2023 01:34] wangxx2026
+got it thanks
+
+{Stickers}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/816086882823831613-3C537.json
+
+
+[07/12/2023 05:39] ni8mare#5096
+@Brendan 🌊🏆 pls check dm
+
+
+[07/12/2023 09:26] markus_ether
+Is the `drawManager` a contract?
+
+
+[07/12/2023 10:32] dylandesrosier
+Yes
+
+{Reactions}
+👍 
+
+[07/12/2023 15:46] infectedfuture
+Does this means for an address to participate to a prize, this address needs to delegate its balance to itself ?
+
+
+[07/12/2023 15:53] trmid
+Yes, but an address' default delegate is itself.
+
+{Reactions}
+❤️ 
+
+[07/12/2023 18:44] 0x111#8641
+I'm not doing the audit but I'm really interested by the code, something I dont understand yet is why is there a global prizeTokenPerShare and also a prizeTokenPerShare for each Tiers struct ?
+
+
+[07/13/2023 01:28] alymurtazamemon
+@trmid `MAX_CARDINALITY` shouldn't be 365 in all places?
+
+
+[07/13/2023 05:51] praise95
+@Brendan 🌊🏆 boss who is supposed to call PrizePool.claimPrize(), is it vault or normal users?
+
+
+[07/13/2023 06:53] devdacian
+my understanding is the Vault is supposed to call PrizePool.claimPrize(). You can see that when  PrizePool.claimPrize() calls other functions, it passes msg.sendern for the vault address parameter of those other functions, so if someone who isn't a vault calls it those checks will fail & the call to _isWinner() for example will return false
+
+{Reactions}
+👍 (3) plus1 
+
+[07/13/2023 06:54] praise95
+Okay, thanks
+
+
+[07/13/2023 11:10] dylandesrosier
+The max cardinality depends on the use case - they shouldn't have to line up across the whole system.
+
+
+[07/13/2023 11:12] dylandesrosier
+The global amount is calculated then set on each tier every draw. The amounts per tier are updated throughout the draw to track claims from those tiers.
+
+
+[07/13/2023 19:24] angry_mustache_man
+Isn't [M-1] & [M-6] finding of bot race invalid ??
+
+
+[07/14/2023 02:56] kartoonjoy
+Pinned a message.
+
+
+[07/14/2023 07:37] comradektg
+Hi @trmid, I sent you a DM, can you check? 😄
+
+{Reactions}
+👍 
+
+[07/14/2023 16:20] infectedfuture
+same issue here , still interested
+
+
+[07/14/2023 19:23] c145h
+This is a sophisticated codebase
+
+{Reactions}
+➕ (3) 
+
+[07/14/2023 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺wardens The **PoolTogether** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the audit is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest-Admin if you have questions along the way!
+
+{Reactions}
+poolpe_love (11) 🫡 (8) poolvibin (6) tada (8) 💩 
+
+[07/14/2023 20:12] brahma7456
+after a long time saw of integral stuffs 😂 and  nice design 🫡
+
+{Reactions}
+🙌 
+
+[07/14/2023 22:30] 0xstalin
+I had a great time auditing this codebase, the protocol's idea is quite interesting for the crypto ecosystem, thanks to @Brendan 🌊🏆 for answering all my questions
+Best of lucks to the protocol in their future endeavors 🫡
+
+
+[07/14/2023 23:15] dylandesrosier
+Thanks for your hard work everyone!! 🫡
+
+
+[07/14/2023 23:41] asselstine
+Happy to help
+
+
+[07/14/2023 23:41] asselstine
+Thanks everyone for all your efforts; I’m excited to see the results and plug all the holes 🙂
+
+
+[07/15/2023 10:24] .anas_22
+Hello
+
+{Reactions}
+👋 (4) 
+
+[07/19/2023 00:15] asselstine
+I've reviewed barely 25% of the submissions and already I'm impressed.
+
+Great job everyone @here! This group is top-tier.
+
+{Reactions}
+🎉 (32) 🤗 (8) praisethesun (5) cheers_badger (5) 👍 (2) 
+
+[07/27/2023 09:06] nethoxa
+I'm sorry to disturb you, but may I ask how is it going? :10_10:
+
+
+[07/27/2023 10:22] nethoxa
+nevermind
+
+
+[07/27/2023 10:22] nethoxa
+xD
+
+
+[07/27/2023 13:02] praise95
+😅
+
+
+[07/27/2023 13:19] nethoxa
+I thought they may finish in a few weeks so smashing the door RN would be a bit... you know... MAMAAAAA, right?
+
+
+[07/27/2023 13:20] nethoxa
+i'm saying nonsense again, fuck
+
+
+[07/28/2023 09:48] praise95
+this should be ready towards the end of August
+
+
+[07/28/2023 18:04] nethoxa
+perfect
+
+
+[07/28/2023 18:04] nethoxa
+thanks
+
+
+[08/09/2023 05:40] praise95
+wen? 🐱
+
+{Reactions}
+🤣 
+
+[08/11/2023 08:34] praise95
+@thebrittfactor  boss any update ?
+
+
+[08/11/2023 13:20] thebrittfactor
+We are finishing out our post-judging QA phase. I anticipate we'll announce awards next week 😁
+
+{Reactions}
+👍 (3) 
+
+[08/11/2023 14:08] praise95
+Okay, thanks
+
+
+[08/16/2023 08:33] dimulski
+How much longer?
+
+
+[08/16/2023 14:16] thebrittfactor
+very very soon 👀 😁
+
+{Reactions}
+🔥 (6) C4Keycap (2) 
+
+[08/16/2023 16:40] nethoxa
+waiting for sponsor approval? 🤔
+
+
+[08/16/2023 17:05] nethoxa
+it seems they will be out REALLY soon
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-3E786.png
+
+{Reactions}
+🧐 
+
+[08/16/2023 17:39] brahma7456
+🕵🏻‍♂️
+
+{Reactions}
+hi5 
+
+[08/16/2023 20:36] thebrittfactor
+🤑 🎉  Awards for PoolTogether:
+
+$5,660.58 USDC » @dirk_y
+$4,403.17 USDC » @rvierdiiev 
+$4,022.18 USDC » @0xStalin 
+$3,606.36 USDC » @zzzitron
+$2,710.76 USDC » @KupiaSec 
+$2,465.97 USDC » @pontifex 
+$2,465.97 USDC » KIntern_NA (@TrungOre and @duc)
+$2,311.12 USDC » @bin2chen 
+$2,027.76 USDC » @shaka 
+$2,014.75 USDC » @volodya 
+$1,908.64 USDC » @wangxx2026 
+$1,896.90 USDC » @Brenzee 
+$1,809.54 USDC » @minhtrng 
+$1,784.28 USDC » @yixxas 
+$1,733.35 USDC » @code-cipher 
+$1,665.52 USDC » @Nyx 
+$1,659.90 USDC » @Alex The Entreprenerd
+$1,646.23 USDC » @comradeKtg 
+$1,643.98 USDC » 0x3e84fa45 (@Arcturus and @markus_ether) 
+$1,643.98 USDC » @mahyar 
+$1,488.31 USDC » @Jeiwan 
+$1,481.83 USDC » @RedTiger Auditor  
+$1,149.42 USDC » @DadeKuma 
+$1,070.85 USDC » @xuwinnie 
+$896.46 USDC » @0xWaitress 
+$882.34 USDC » @markus_ether 
+$770.49 USDC » @seeques  
+$739.79 USDC » @degensec.eth 
+$739.79 USDC » @infect3d  
+$739.39 USDC » @Udsen 
+$715.75 USDC » @0xcatellatech 
+$571.32 USDC » @josephdara 
+$569.07 USDC » @MiniGlome (Mlome) 
+$504.75 USDC » @qpzm 
+$473.59 USDC » @0xbepresent 
+$464.33 USDC » @0xkasper 
+$446.12 USDC » @ni8mare 
+$387.78 USDC » @alymurtazamemon 
+$360.73 USDC » @Tripathi 
+$357.36 USDC » @nadin 
+$341.44 USDC » @saneryee 
+$341.44 USDC » @hals 
+$338.64 USDC » @3doc 
+$321.72 USDC » @c3phas 
+$247.48 USDC » @petrichor 
+$247.48 USDC » @hunter_w3b 
+$247.48 USDC » @SAQ 
+$215.72 USDC » @gzeon 
+$201.15 USDC » @inspecktor 
+$193.51 USDC » @keccak123 
+$181.48 USDC » @GREY-HAWK-REACH ( @escrow, @aslanbek, @dimulski, @aswinraj94, @0xprinc and @Kose)
+$168.19 USDC » @ptsanev 
+$168.19 USDC » @0xMirce  
+$165.94 USDC » @Breeje 
+$165.56 USDC » @Co0nan 
+$151.17 USDC » @ABAIKUNANBAEV 
+$147.50 USDC » @squeaky_cactus 
+$142.55 USDC » @dacian 
+$140.30 USDC » @kutu 
+$135.25 USDC » @0xSmartContract 
+$114.54 USDC » @peanuts  
+$112.29 USDC » @K42 Ψ
+
+
+[08/16/2023 20:37] thebrittfactor
+$59.51 USDC » @0x11singh99 
+$52.11 USDC » @wvleak 
+$42.33 USDC » @serial-coder 
+$40.22 USDC » @Rolezn 
+$40.22 USDC » @naman1778
+$38.88 USDC » @grearlake 
+$25.21 USDC » @btk 
+$24.30 USDC » @koxuan 
+$24.30 USDC » @LéoS 
+$24.30 USDC » @0xn006e7 
+$24.30 USDC » @SAAJ 
+$24.30 USDC » @Rageur 
+$24.30 USDC » @ReyAdmirado  
+$24.30 USDC » @Raihan 
+$24.30 USDC » @SM3_SS 
+$24.30 USDC » @ybansal2403 
+$24.30 USDC » @0xAnah 
+$22.96 USDC » @neumo 
+$22.96 USDC » @Oxchsyston 
+$22.96 USDC » @Jaraxxus775 
+$22.96 USDC » @dev0cloo 
+$21.54 USDC » @praise 
+$21.54 USDC » @0xPsuedoPandit 
+$19.29 USDC » @Darwin 
+$19.29 USDC » @YY 
+$19.29 USDC » @Jorgect
+$19.29 USDC » @namx05 
+$19.29 USDC » @Daniel526 
+$15.92 USDC » @joaovwfreire 
+$15.92 USDC » @eyexploit  
+$15.92 USDC » @fatherOfBlocks 
+$15.92 USDC » @ArmedGoose 
+$15.92 USDC » @ayden 
+$15.92 USDC » @Vagner 
+$15.92 USDC » @erebus 
+$15.92 USDC » @Bauchibred 
+$15.92 USDC » @MohammedRizwan  
+$15.92 USDC » @banpaleo5  
+$15.92 USDC » @Kaysoft 
+$15.92 USDC » @alexzoid 
+$15.92 USDC » @Lanrebayode77 
+$2.25 USDC » @ravikiranweb3 
+$2.25 USDC » @John 
+$2.25 USDC » @MahdiRostami 
+$2.25 USDC » @Bobface 
+$2.25 USDC » @LuchoLeonel1 
+$2.25 USDC » @alexweb3 
+$2.25 USDC » @teawaterwire 
+
+🏁 Findings summary
+--------------------------------------
+High risk findings: 9 unique (75 total)
+Med risk findings: 27 unique (84 total) 
+Gas reports: 19 (Best: @c3phas)
+QA reports: 37 (Best: @bin2chen)
+Advanced Analysis reports: 13 (Best: @0xStalin)
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.
+
+{Reactions}
+✅ (10) 🚀 (11) 🙏 (9) 🔥 (11) code4rena (10) praisethesun (6) cheers_badger (6) chefskiss (6) 👀 (6) 
+
+[08/16/2023 20:38] nethoxa
+xD
+
+
+[08/16/2023 20:38] petrichor#0961
+:10_10:   pufffff
+
+
+[08/16/2023 20:39] josephdara
+Arigato
+
+{Reactions}
+🫡 (2) 
+
+[08/16/2023 20:40] brahma7456
+wow, I guess found my first high 💪
+
+{Reactions}
+🎉 (10) 🙌 (3) 
+
+[08/16/2023 20:42] 0xstalin
+https://tenor.com/view/siuu-gif-23749474
+
+{Embed}
+https://tenor.com/view/siuu-gif-23749474
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/siuu-CE259.png
+
+{Reactions}
+🔥 (4) 
+
+[08/16/2023 20:43] saq_143
+
+
+{Stickers}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/796141648471916574-9CF8C.json
+
+
+[08/16/2023 20:43] 0xstalin
+finally made it to the top 3 🎉
+
+{Reactions}
+🔥 (24) praisethesun (10) hi5 (4) 🎉 (2) 
+
+[08/16/2023 22:54] sockdrawermoney
+Congrats!
+
+{Reactions}
+🫡 (4) 
+
+[08/16/2023 23:07] Lanrebayode77#6788
+This year, I will make to top spot (1)✅.
+
+{Reactions}
+🙏 
+
+[08/17/2023 01:34] wangxx2026
+✅
+
+
+[08/17/2023 01:34] wangxx2026
+My third contest
+
+
+[08/17/2023 01:35] wangxx2026
+get something
+
+
+[08/17/2023 01:46] jovi6132
+Something's odd at my profile page.. I didn't submit a QA report
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/image-0F5EF.png
+
+
+[08/17/2023 01:47] jovi6132
+Can someone more experienced help me understand this? 🙂
+
+
+[08/17/2023 02:03] yixxas
+One or more of your other reports got downgraded to QA
+
+
+[08/17/2023 02:07] jovi6132
+Ooh! I see! Thanks a lot man!!
+
+{Reactions}
+😄 
+
+[08/17/2023 02:58] iceBear#4987
+I see this on my page 
+but not see my name on reward list🥲🥲
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/bc635099e7418c96-51322.png
+
+
+[08/17/2023 03:02] iceBear#4987
+Whom can I seek assistance from? 
+Thank  very much for any response.
+
+
+[08/17/2023 03:04] iceBear#4987
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/7cddfdcb06f0caab-A24DD.png
+
+
+[08/17/2023 06:36] namx05
+This was my first contest and I was able to find one Medium🙂✌️
+
+
+[08/17/2023 06:46] zhaojie
+this was my third contest,I got nothing :gummy_wink:
+
+{Reactions}
+🫂 
+
+[08/17/2023 07:12] t1moh
+@0xStalin congrats, now it becomes harder to overtake you
+
+{Reactions}
+4739_Skeletor (2) 
+
+[08/17/2023 07:41] Oxchryston.eth#7380
+Wow .... Congrats to us it's my first work that paid tho'😅
+
+{Reactions}
+C4Keycap 🎉 
+
+[08/17/2023 07:47] alymurtazamemon
+This was my first contest and I only submitted QA and Gas. Both got A Grade.
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/F3tPJ7EaIAAdBKt-D3E4A.png
+
+{Reactions}
+💯 (13) hi5 (6) 🎉 
+
+[08/17/2023 11:20] .sy_s
+
+
+{Stickers}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/796140753143201873-6E3E0.json
+
+
+[08/17/2023 11:20] .sy_s
+
+
+{Stickers}
+Code4rena - ARCHIVE-Q3-2023 - pooltogether-jul07 [1126487432284606565].txt_Files/796140753143201873-6E3E0.json
+
+
+[08/17/2023 11:20] .sy_s
+my namme is not existanc
+
+
+[08/17/2023 11:23] .sy_s
+@SY_S 
+i paticipated but i not found my  name 
+what is the reoson
+
+
+[08/17/2023 11:35] zhaojie
+Not valid
+
+
+[08/17/2023 12:03] plamkata
+For 2-3 hours of work Imma take these 160 😊
+
+{Reactions}
+👍 (3) 
+
+[08/17/2023 14:10] _3doc_
+Definitely not an easy one. Congrats to everybody for the findings and the effort
+
+
+[08/19/2023 14:58] mlome
+Same, 3 hours, only 1 contract read, $569.07, my highest bounty let's go 😊
+
+
+[08/20/2023 17:17] uncle Jeff#4407
+where they manually generated or by bots?
+
+
+[08/21/2023 03:52] alymurtazamemon
+Manually
+
+
+[08/21/2023 11:28] uncle Jeff#4407
+sent a dm
+
+
+==============================================================
+Exported 218 message(s)
+==============================================================
